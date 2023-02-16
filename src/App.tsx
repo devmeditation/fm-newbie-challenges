@@ -1,6 +1,8 @@
+import { ProductPreviewCard } from "./ProductPreviewCard"
+
 function App() {
   return (
-    <h1>Newbie Challenges</h1>
+    <ProductPreviewCard />
   )
 }
 
