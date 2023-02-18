@@ -1,9 +1,13 @@
-import { ProductPreviewCard } from "./ProductPreviewCard"
+import { ProductPreviewCard } from "./ProductPreviewCard";
+import { SkilledELearning } from "./SkilledELearning";
 
 function App() {
   return (
-    <ProductPreviewCard />
-  )
+    <>
+      <ProductPreviewCard />
+      <SkilledELearning />
+    </>
+  );
 }
 
-export default App
+export default App;
