@@ -23,6 +23,7 @@ export function SkilledELearning() {
         </div>
 
         <div className={styles.introDetails}>
+          <span className={styles.introDetailsColor}></span>
           <div className={styles.introDetailsCard}>
             <p>Members</p>
             <strong>29k</strong>
