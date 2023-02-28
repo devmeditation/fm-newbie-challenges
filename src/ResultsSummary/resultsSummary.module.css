@@ -1,0 +1,150 @@
+root {
+  --green: rgb(8, 218, 130);
+ --green-light: rgb(3, 255, 158, 0.1);
+
+ --blue-light: rgb(0, 0, 255);
+ --blue-light: rgb(0, 0, 255, 0.1);
+
+ --red: rgb(255, 60, 0);
+ --red-light: rgb(255, 60, 0, 0.1);
+
+ --yellow: rgb(253, 153, 2);
+ --yellow-light: rgb(253, 153, 2, 0.1);
+}
+
+.resultsSummary {
+  margin-top: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.resultContainer {
+  border-bottom-right-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  padding: 5rem;
+  /* background: rgb(29, 29, 141); */
+  background: linear-gradient(10deg, rgb(51, 34, 206), rgb(105, 74, 241));
+  color: silver;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result {
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: rgb(24, 24, 124); */
+  background: linear-gradient(10deg, rgba(48, 32, 190, 0.1), rgba(34, 21, 151, 0.829));
+
+  width: 10rem;
+  height: 10rem;
+
+  margin: 1rem;
+  font-weight: bold;
+}
+
+.result strong {
+  color: white;
+  font-size: 3rem !important;
+}
+
+.resultContainer strong {
+  font-size: 2rem;
+}
+
+.resultContainer p {
+  max-width: 80%;
+}
+
+.cardContainer {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  filter: brightness(90%);
+
+  padding: 1.5rem;
+  border-radius: 12px;
+
+  color: silver;
+}
+
+.card:hover {
+  filter: brightness(100%);
+  scale: 102%;
+}
+
+.cardIconAndTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cardResultTotal {
+  color: rgb(24, 24, 124);
+  padding: 0 4px;
+}
+
+.cardButton{
+  padding: 1rem;
+  border-radius: 40px;
+  border: none;
+  background: rgba(13, 13, 100, 0.9);
+  color: white;
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.cardButton:hover {
+  background: rgb(20, 182, 115);
+}
+
+.cardButton:active {
+  scale: 98%;
+  filter: brightness(75%);
+}
+
+
+@media (min-width: 1100px) {
+  .resultsSummary {
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin: 10rem;
+  }
+  
+  .resultContainer {
+    width: 45%;
+    height: 80vh;
+    border-radius: 3rem;
+    transform: translateX(7rem);
+  }
+
+  .cardContainer {
+    justify-content: center;
+    width: 65%;
+    height: 70vh;
+    padding-left: 10rem;
+    border-radius: 3rem;
+    box-shadow: 3px 3px 15rem -5rem rgb(37, 1, 30);
+  }
+}

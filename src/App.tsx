@@ -1,4 +1,5 @@
 import { ProductPreviewCard } from "./ProductPreviewCard";
+import { ResultsSummary } from "./ResultsSummary";
 import { SkilledELearning } from "./SkilledELearning";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <ProductPreviewCard />
       <SkilledELearning />
+      <ResultsSummary />
     </>
   );
 }
