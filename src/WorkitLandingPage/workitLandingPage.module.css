@@ -1,0 +1,272 @@
+/* section {
+  background: rgba(192, 190, 190, 0.2);
+} */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+  background: rgb(62, 7, 114);
+  color: white;
+}
+
+.header .title {
+  font-size: 1.5rem;
+}
+
+.header a {
+  color: white;
+  
+  text-decoration: none;
+  border-bottom: 0.3rem solid transparent;
+
+  transition: all 0.4s linear;
+}
+
+.header a:hover {
+  border-bottom: 0.3rem solid rgb(4, 255, 171);
+}
+
+.intro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+
+  padding: 1rem;
+  padding-bottom: 8rem;
+  
+  background: rgb(62, 7, 114);
+  color: white;
+
+  border-bottom-left-radius: 40% 7%;
+  border-bottom-right-radius: 40% 7%;
+
+}
+
+.intro h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.intro h1 span {
+  border-bottom: 0.3rem solid rgb(4, 255, 171);
+}
+
+.intro button {
+  border: none;
+  background: rgb(4, 255, 171);
+  padding: 1rem 1.5rem;
+  margin: 1rem;
+  font-size: 1.125rem;
+  font-weight: normal; 
+}
+
+.intro img {
+  width: 16rem;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+.cards {
+  padding-top: 8rem;
+  background: rgba(192, 190, 190, 0.2);
+  padding-bottom: 3rem;
+  border-bottom-left-radius: 40% 7%;
+  border-bottom-right-radius: 40% 7%;
+}
+.card {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.card span {
+  border: 2px solid rgb(62, 7, 114);
+  border-radius: 100%;
+  padding: 1rem 1.5rem;
+}
+
+.card h2 {
+  font-size: 1.75rem;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.user img {
+  position: relative;
+  width: 20rem;
+  border-radius: 100%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background: rgb(4, 255, 171);
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: rgb(62, 7, 114);
+  color: white;
+
+  margin: 0 1rem;
+  padding: 1rem 3rem;
+  min-height: 40vh;
+
+  transform: translateY(-15%);
+}
+
+.user button {
+  border: none;
+  background: rgb(4, 255, 171);
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: rgb(69, 24, 114);
+
+  font-size: xx-large;
+}
+
+footer .title {
+  color: rgba(69, 24, 114, 0.7);
+}
+/* 
+footer .title:hover {
+  scale: 105%;
+  color: rgb(62, 7, 114);
+} */
+
+.socialMedia {
+  margin: 1rem;
+  display: flex;
+  gap: 1rem;
+
+  font-size: x-large;
+}
+
+.socialMedia svg:hover {
+  color: rgb(62, 7, 114);
+  scale: 115%;
+}
+
+
+@media (min-width: 600px) {
+  .header {
+    padding: 1rem 5rem;
+  }
+
+  .intro h1{
+    max-width: 60%;
+    /* padding: 3rem 12rem 8rem 12rem; */
+  }
+
+  .intro img {
+    width: 20rem;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+  }
+
+  .card {
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    gap: 1.125rem;
+
+    padding: 1rem 6rem;
+  }
+
+  .user {
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 550px;
+    /* margin-bottom: 5rem; */
+  }
+
+  .user img {
+    width: 15rem;
+    transform: translateY(10%) translateX(25%);
+  }
+
+  .content {
+    max-width: 650px;
+    min-height: 350px;
+
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    gap: 1rem;
+   
+    transform: translateY(40%) translateX(-5%);
+  }
+
+}
+
+@media (min-width:1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+  }
+
+  .intro h1{
+    max-width: 40%;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    /* max-width: 70%; */
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+}
