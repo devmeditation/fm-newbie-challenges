@@ -11,8 +11,8 @@ function App() {
       <SkilledELearning />
       <ResultsSummary />
       <WorkitLandingPage /> */}
-
       <ProfileCard />
+
     </>
   );
 }

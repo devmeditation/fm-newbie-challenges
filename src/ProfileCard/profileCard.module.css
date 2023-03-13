@@ -1,7 +1,9 @@
 .container {
-  background: aquamarine;
+  background: url("/relogio_astonmartin.jpg");
+  background-size: cover;
   padding: 1.5rem;
   /* height: 100vh; */
+
 
   display: flex;
   flex-direction: column;
@@ -18,9 +20,11 @@ section {
 }
 
 .header {
-  background: rgb(90, 223, 29);
+  background: url("/relogio_astonmartin.jpg");
+  background-size: cover;
   display: flex;
   justify-content: center;
+
 }
 
 .header img {
@@ -41,10 +45,11 @@ section {
   align-items: center;
 
   color: rgb(110, 109, 109);
+  font-size: 1rem;
 }
 
 .content span {
-  font-size: 140%;
+  font-size: 120%;
 }
 
 .content strong {
@@ -56,6 +61,7 @@ section {
   padding: 2rem;
   display: flex;
   justify-content: space-around;
+  font-size: 1rem;
 }
 
 .footer span {
@@ -68,18 +74,26 @@ section {
 }
 
 footer strong {
-  font-size: 180%;
+  font-size: 140%;
   color: black;
+}
+
+@media (min-width: 600px) {
+  .content,
+  .footer {
+    font-size: 1.5rem;
+  }
+  
 }
 
 @media (min-width: 1024px) {
   section {
     max-width: 900px;
-    font-size: 180%;
+    /* font-size: 140%; */
   }
 
-  /* .content {
-    min-height: 20vmax;
-    padding-top: 8rem;
-  } */
+  .content,
+  .footer {
+    font-size: 1.75rem;
+  }
 }

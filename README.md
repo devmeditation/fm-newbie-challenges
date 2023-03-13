@@ -23,6 +23,9 @@ Autor: Dev Meditation
 
 ![screen](./public/noproject/005.png)
 
+## Project 006: Stats preview card
+
+
 ### TECHS AND LIBS
 
 - [ReactJs]()
