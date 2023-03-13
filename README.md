@@ -25,6 +25,7 @@ Autor: Dev Meditation
 
 ## Project 006: Stats preview card
 
+![screen](./public/noproject/006.png)
 
 ### TECHS AND LIBS
 
