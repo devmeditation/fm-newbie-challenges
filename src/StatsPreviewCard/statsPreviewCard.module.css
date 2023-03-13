@@ -1,0 +1,106 @@
+.statsPreviewCard {
+  padding: 1rem;
+  background: url("/statsPreviweCard-2.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  
+  background: rgb(43, 26, 70);
+  color: silver;
+  
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.image {
+  position: relative;
+}
+
+.image span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(101, 5, 255, 0.4);
+  
+  transition: all 0.3s linear;
+}
+
+.image span:hover {
+  background: rgba(87, 2, 34, 0.5);
+}
+
+.image img {
+  width: 100%;
+}
+
+.description {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+
+  text-align: center;
+}
+
+.text h1 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 190%;
+}
+
+.text h1 span {
+  color: rgb(152, 18, 185);
+  font-size: 120%;
+}
+
+.footer {
+  display: flex;
+  gap: 1rem;
+
+  padding-top: 1rem;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1.5rem;
+}
+
+.numbers strong {
+  color: white;
+  font-size: 130%;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row-reverse;
+    border-radius: 2rem;
+    max-width: 80vw;
+    /* max-height: 70vh; */
+  }
+
+  .description {
+    text-align: start;
+  }
+
+  .image {
+    width: 80%;
+  }
+}
