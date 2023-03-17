@@ -1,3 +1,4 @@
+import { BaseApparel } from "./BaseApparel";
 import { ProductPreviewCard } from "./ProductPreviewCard";
 import { ProfileCard } from "./ProfileCard";
 import { ResultsSummary } from "./ResultsSummary";
@@ -13,7 +14,8 @@ function App() {
       {/* <ResultsSummary /> */}
       {/* <WorkitLandingPage /> */}
       {/* <ProfileCard /> */}
-      <StatsPreviewCard />
+      {/* <StatsPreviewCard /> */}
+      <BaseApparel />
     </>
   );
 }

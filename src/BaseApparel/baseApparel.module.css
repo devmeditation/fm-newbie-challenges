@@ -1,0 +1,135 @@
+.baseApparel {
+  display: flex;
+  flex-direction: column;
+}
+
+.baseApparelHeader {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.baseApparelHeader span {
+  display: flex;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  /* background-color: rgb(255, 4, 171); */
+  background: conic-gradient(rgb(235, 159, 140) 65%, rgba(235, 159, 140, 0.8) 0deg);
+  font-size: 0;
+}
+
+.baseApparelHeader span::after {
+  /* content: attr(data-progress) '%'; */
+  content: '';
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 5rem;
+  margin: 10px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.baseApparelHeader div {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 190%;
+  line-height: 1.1;
+}
+
+.baseApparelBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.baseApparelBody img {
+  width: 100%;
+  height: 50vh;
+  
+  object-fit: cover;
+}
+
+
+.baseApparelContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 2rem;
+}
+
+.baseApparelTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 250%;
+  line-height: 1;
+}
+
+.baseApparelTitle span {
+  font-weight: lighter;
+  letter-spacing: 2vmax;
+  color: rgb(235, 159, 140);
+
+  margin-bottom: 1rem;
+}
+
+.baseApparelTitle strong {
+  font-size: 120%;
+  letter-spacing: 2vmax;
+  line-height: 0.9;
+}
+
+.baseApparelContent p {
+  margin: 1rem;
+  text-align: center;
+  font-size: 120%;
+}
+
+.baseApparelForm {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.baseApparelForm input {
+  font-size: 100%;
+  border-radius: 3rem;
+  padding: 1rem;
+  
+  
+  border: 2px solid rgb(235, 159, 140);
+  outline: none;
+  
+  color: rgb(247, 82, 41);
+  background: transparent;
+}
+
+.baseApparelForm button {
+  border: none;
+
+  transform: translateX(-70%);
+  border-radius: 50%;
+
+  font-size: 180%;
+  font-weight: bold;
+  
+  color: rgb(255, 255, 255);
+  background: rgba(235, 159, 140);
+  width: 5rem;
+  box-shadow: 1px 0.2rem 1.5rem -0.5rem rgba(235, 159, 140, 0.904);
+}
+
+.baseApparelForm button:active {
+  transform: translateX(-60%);
+  background: rgba(255, 255, 255, 0.9);
+  color: rgba(235, 159, 140);
+}
