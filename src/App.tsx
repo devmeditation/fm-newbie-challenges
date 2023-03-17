@@ -1,4 +1,4 @@
-import { BaseApparel } from "./BaseApparel";
+import { ShipWSOnBoard } from "./ShipWSOnBoard";
 import { ProductPreviewCard } from "./ProductPreviewCard";
 import { ProfileCard } from "./ProfileCard";
 import { ResultsSummary } from "./ResultsSummary";
@@ -15,7 +15,7 @@ function App() {
       {/* <WorkitLandingPage /> */}
       {/* <ProfileCard /> */}
       {/* <StatsPreviewCard /> */}
-      <BaseApparel />
+      <ShipWSOnBoard />
     </>
   );
 }

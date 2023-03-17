@@ -1,16 +1,24 @@
-.baseApparel {
+.shipWSOnBoard {
   display: flex;
   flex-direction: column;
+
+  background: url(/ws-02.jpg);
+  background-size: cover;
 }
 
-.baseApparelHeader {
+.shipWSOnBoardWS {
+  width: 100%;
+}
+
+
+.shipWSOnBoardHeader {
   margin: 2rem;
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-.baseApparelHeader span {
+.shipWSOnBoardHeader span {
   display: flex;
   width: 8rem;
   height: 8rem;
@@ -20,7 +28,7 @@
   font-size: 0;
 }
 
-.baseApparelHeader span::after {
+.shipWSOnBoardHeader span::after {
   /* content: attr(data-progress) '%'; */
   content: '';
   display: flex;
@@ -34,7 +42,7 @@
   text-align: center;
 }
 
-.baseApparelHeader div {
+.shipWSOnBoardHeader div {
   display: flex;
   flex-direction: column;
 
@@ -42,20 +50,20 @@
   line-height: 1.1;
 }
 
-.baseApparelBody {
+.shipWSOnBoardBody {
   display: flex;
   flex-direction: column;
 }
 
-.baseApparelBody img {
+.shipWSOnBoardBody img {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   
   object-fit: cover;
 }
 
 
-.baseApparelContent {
+.shipWSOnBoardContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,7 +72,7 @@
   margin: 2rem;
 }
 
-.baseApparelTitle {
+.shipWSOnBoardTitle {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,33 +82,40 @@
   line-height: 1;
 }
 
-.baseApparelTitle span {
-  font-weight: lighter;
-  letter-spacing: 2vmax;
-  color: rgb(235, 159, 140);
-
+.shipWSOnBoardTitle span {
   margin-bottom: 1rem;
+  
+  font-weight: lighter;
+  font-size: 110%;
+  letter-spacing: 1rem;
+  
+  color: rgb(235, 159, 140);
 }
 
-.baseApparelTitle strong {
-  font-size: 120%;
-  letter-spacing: 2vmax;
-  line-height: 0.9;
+.shipWSOnBoardTitle strong {
+  font-size: 140%;
+  letter-spacing: 1rem;
+  line-height: 1;
 }
 
-.baseApparelContent p {
-  margin: 1rem;
-  text-align: center;
-  font-size: 120%;
+.shipWSOnBoardContent p {
+  margin: 0.5rem;
+  margin-top: 2rem;
+
+  text-align: justify;
+  font-size: 110%;
 }
 
-.baseApparelForm {
+.shipWSOnBoardForm {
   display: flex;
   justify-content: center;
   padding: 1rem;
+
+  width: 100%;
 }
 
-.baseApparelForm input {
+.shipWSOnBoardForm input {
+  min-width: 70%;
   font-size: 100%;
   border-radius: 3rem;
   padding: 1rem;
@@ -113,7 +128,7 @@
   background: transparent;
 }
 
-.baseApparelForm button {
+.shipWSOnBoardForm button {
   border: none;
 
   transform: translateX(-70%);
@@ -128,8 +143,15 @@
   box-shadow: 1px 0.2rem 1.5rem -0.5rem rgba(235, 159, 140, 0.904);
 }
 
-.baseApparelForm button:active {
+.shipWSOnBoardForm button:active {
   transform: translateX(-60%);
   background: rgba(255, 255, 255, 0.9);
   color: rgba(235, 159, 140);
+}
+
+
+@media (min-width: 1024px) {
+  .shipWSOnBoardWS {
+    width: 900px;
+  }
 }
