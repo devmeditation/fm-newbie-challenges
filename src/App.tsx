@@ -5,6 +5,7 @@ import { ResultsSummary } from "./ResultsSummary";
 import { SkilledELearning } from "./SkilledELearning";
 import { StatsPreviewCard } from "./StatsPreviewCard";
 import { WorkitLandingPage } from "./WorkitLandingPage";
+import { NewsLetterSingUpMessage } from "./NewsletterSignUpMessage";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* <WorkitLandingPage /> */}
       {/* <ProfileCard /> */}
       {/* <StatsPreviewCard /> */}
-      <ShipWSOnBoard />
+      {/* <ShipWSOnBoard /> */}
+      <NewsLetterSingUpMessage />
     </>
   );
 }
