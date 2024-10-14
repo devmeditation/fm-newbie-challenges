@@ -1,6 +1,6 @@
-import { apiFake } from "./apiFake";
-import { Button } from "./Button";
-import styles from "./SkilledELearning.module.css";
+import { Button } from './Button'
+import styles from './SkilledELearning.module.css'
+import { apiFake } from './apiFake'
 
 export function SkilledELearning() {
   return (
@@ -23,7 +23,7 @@ export function SkilledELearning() {
         </div>
 
         <div className={styles.introDetails}>
-          <span className={styles.introDetailsColor}></span>
+          <span className={styles.introDetailsColor} />
           <div className={styles.introDetailsCard}>
             <p>Members</p>
             <strong>29k</strong>
@@ -43,18 +43,16 @@ export function SkilledELearning() {
           Check out our most popular caurses!
         </div>
 
-        {apiFake.map((item) => {
+        {apiFake.map(item => {
           return (
             <div key={item.title} className={styles.card}>
               <span>{item.icon}</span>
               <h3>{item.title}</h3>
-              <p>
-                {item.description}
-              </p>
+              <p>{item.description}</p>
 
               <Button stylesOption={styles.cardButton}>Get Started</Button>
             </div>
-          );
+          )
         })}
       </div>
 
@@ -63,5 +61,5 @@ export function SkilledELearning() {
         <Button stylesOption={styles.footerBbutton}>Get Started</Button>
       </footer>
     </section>
-  );
+  )
 }

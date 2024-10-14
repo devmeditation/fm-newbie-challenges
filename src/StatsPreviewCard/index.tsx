@@ -1,11 +1,11 @@
-import styles from "./statsPreviewCard.module.css";
+import styles from './statsPreviewCard.module.css'
 
 export function StatsPreviewCard() {
   return (
     <section className={styles.statsPreviewCard}>
       <div className={styles.container}>
         <div className={styles.image}>
-          <span></span>
+          <span />
           <img
             src="/statsPreviewCard.jpg"
             alt="Grupo de pessoas em uma mesa de reunião"
@@ -44,5 +44,5 @@ export function StatsPreviewCard() {
         </div>
       </div>
     </section>
-  );
+  )
 }

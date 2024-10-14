@@ -1,6 +1,6 @@
-import { FaFacebookSquare, FaInstagram, FaTwitter } from "react-icons/fa";
-import { cardTexts } from "./api";
-import styles from "./workitLandingPage.module.css";
+import { FaFacebookSquare, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { cardTexts } from './api'
+import styles from './workitLandingPage.module.css'
 
 export function WorkitLandingPage() {
   return (
@@ -26,22 +26,22 @@ export function WorkitLandingPage() {
             Data <span>tailored</span> to your needs.
           </h1>
 
-          <button>Learn More</button>
+          <button type="button">Learn More</button>
 
           <img src="/smartphone.webp" alt="foto de um smartphone" />
         </div>
 
         <div className={styles.cards}>
-          {cardTexts.map((cardText) => {
+          {cardTexts.map(cardText => {
             return (
-              <div className={styles.card}>
+              <div key={cardText.id} className={styles.card}>
                 <span>{cardText.id}</span>
                 <div>
                   <h2>{cardText.title}</h2>
                   <p>{cardText.description}</p>
                 </div>
               </div>
-            );
+            )
           })}
         </div>
 
@@ -57,7 +57,7 @@ export function WorkitLandingPage() {
               schedule a call.
             </p>
 
-            <button>Apply fo access</button>
+            <button type="button">Apply fo access</button>
           </div>
         </div>
 
@@ -75,5 +75,5 @@ export function WorkitLandingPage() {
         </footer>
       </section>
     </main>
-  );
+  )
 }

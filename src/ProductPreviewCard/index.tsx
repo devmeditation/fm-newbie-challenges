@@ -1,5 +1,5 @@
-import { HiOutlineShoppingBag } from "react-icons/hi";
-import styles from "./productPreviewCard.module.css";
+import { HiOutlineShoppingBag } from 'react-icons/hi'
+import styles from './productPreviewCard.module.css'
 
 export function ProductPreviewCard() {
   return (
@@ -30,12 +30,12 @@ export function ProductPreviewCard() {
             <strong>R$ 795,00</strong> <span>R$ 895,00</span>
           </div>
 
-          <button className={styles.productButton}>
+          <button type="button" className={styles.productButton}>
             <HiOutlineShoppingBag />
             Adicionar à sacola
           </button>
         </div>
       </div>
     </section>
-  );
+  )
 }

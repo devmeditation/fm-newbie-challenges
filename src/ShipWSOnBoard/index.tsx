@@ -1,13 +1,13 @@
-import { BsChevronRight } from "react-icons/bs";
+import { BsChevronRight } from 'react-icons/bs'
 
-import styles from "./shipWSOnBoard.module.css";
+import styles from './shipWSOnBoard.module.css'
 
 export function ShipWSOnBoard() {
   return (
     <section className={styles.shipWSOnBoard}>
       <section className={styles.shipWSOnBoardWS}>
         <header className={styles.shipWSOnBoardHeader}>
-          <span></span>
+          <span />
           <div>
             <strong>WESLEY</strong>
             <strong>SAFADÃO</strong>
@@ -36,7 +36,7 @@ export function ShipWSOnBoard() {
 
             <form className={styles.shipWSOnBoardForm}>
               <input type="text" placeholder="Email Address" />
-              <button>
+              <button type="button">
                 <BsChevronRight />
               </button>
             </form>
@@ -44,5 +44,5 @@ export function ShipWSOnBoard() {
         </div>
       </section>
     </section>
-  );
+  )
 }
